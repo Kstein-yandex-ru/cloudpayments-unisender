@@ -28,7 +28,9 @@ Pay желательно указывать в любом случае, инач
 
 ## Отладка неисправностей
 Если отправка не работает, можно включить отображение ошибок, раскомментировав эти строки:
+```
    // $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
    // if ( $status != 201 ) {
    //     die("Error: call to URL $url failed with status $status, response $json_response, curl_error " . curl_error($curl) . ", curl_errno " . curl_errno($curl));
    // }
+```
