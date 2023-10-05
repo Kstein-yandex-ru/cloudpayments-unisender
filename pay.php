@@ -7,7 +7,10 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST['Email']) AND $_POST[
 require('config.php'); 
 
 
+if ( isset($_POST['Data'])) {
 $dataDecoded = json_decode($_POST['Data']);
+}
+
 
 if ( isset($dataDecoded->cloudPayments->recurrent)  ) {
 
